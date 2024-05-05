@@ -15,5 +15,5 @@ class XmlParser:
                 xml_element = ComplexXmlElement(element)
             else:
                 xml_element = SimpleXmlElement(element)
-            details += f"  {xml_element.get_details()}\n"
+            details += f"{xml_element.get_details()}\n"
         return details
