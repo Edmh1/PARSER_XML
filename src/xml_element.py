@@ -4,6 +4,9 @@ from abc import ABC, abstractmethod
 class XmlElement(ABC):
     def __init__(self, element):
         self.element = element
+    
+    def get_element(self):
+        return self.element
 
     def get_name(self):
         return self.element.tag

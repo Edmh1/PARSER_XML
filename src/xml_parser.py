@@ -13,7 +13,8 @@ class XmlParser:
         for element in self.root:
             if len(element) > 0:
                 xml_element = ComplexXmlElement(element)
+                details += f"[{xml_element.get_details(1)}]\n"
             else:
                 xml_element = SimpleXmlElement(element)
-            details += f"{xml_element.get_details()}\n"
+                details += f"{xml_element.get_details()}\n"
         return details
